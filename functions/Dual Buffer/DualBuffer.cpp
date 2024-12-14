@@ -1,3 +1,11 @@
-//'Producer' buffer is putting values into its buffer. It then waits for the processing buffer to finish processing before sending over/swapping buffers, 
-  //sending its new data to processor function and taking processor buffer and replacing values in next iteration
-// 'Consumer' or Processing buffer is processing the values the producer buffer is giving it
+// producer consumer problem
+// double buffering is pipelining
+
+//inside a thread for generating data, 
+    //put random numbers in the buffer
+    //use a mutex to wait for the consumer to finish consuming numbers you put in
+    //swap vectors/their data using .swap
+    //"consumer finished processing data, now give them our new data to process and now generate new data in the consumers buffer"
+void Generate_Data(){}
+
+void Process_Data(){ }
