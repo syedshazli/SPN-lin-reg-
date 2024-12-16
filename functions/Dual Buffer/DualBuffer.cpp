@@ -1,3 +1,4 @@
+#include <pthread.h>
 // producer consumer problem
 // double buffering is pipelining
 
